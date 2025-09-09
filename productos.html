@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BOM BOCADO</title>
+    <link rel="stylesheet" href="./js/estilos.css">
+      <link rel="stylesheet" href="responsivedesing.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        .hero {
+            background-color: #9c2007;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+             color: #ffffff;
+            margin: 0;
+        }
+
+        .hero button {
+             background-color: #ff83a4;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 28px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 10px 0 5px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .price {
+            color: #a04f66;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+  <nav>
+    <div class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i> INICIO</a>
+      <a href="nosotros.html"><i class="fas fa-users"></i> NOSOTROS</a>
+      <a href="productos.html"><i class="fas fa-birthday-cake"></i> PRODUCTOS</a>
+      <a href="novedades.html"><i class="fas fa-star"></i> NOVEDADES</a>
+      <a href="contacto.html"><i class="fas fa-envelope"></i> CONTACTO</a>
+    </div>
+
+ <div class="nav-icons">
+  <a href="login.html" title="Mi cuenta">
+    <i class="fas fa-user"></i>
+  </a>
+  <a href="carrito.html" title="Carrito" class="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+  </a>
+</div>
+
+  </nav>
+</header>
+
+
+    <section class="ola">
+      <div class="contenido">
+        <div class="imagen">
+          <img src="https://i.postimg.cc/WzQ2jJjC/lol.png" alt="Torta decorada" />
+        </div>
+        <div class="textito">
+          <h1>Haz tu pedido favorito</h1>
+          <p>Cada postre es una combinación de sabor, ternura y frescura.
+          Hechos con pasión para disfrutar en familia o regalar con cariño.
+           BOM BOCADO convierte lo dulce en una experiencia única.</p>
+        </div>
+      </div>
+    </section>
+     
+
+    <section class="colecciones">
+    <h2 style="color: #7a1a0a;">Pasteles</h2>
+    <div class="colecciones-grid">
+        <div class="coleccion-item">
+            <img src="https://i.pinimg.com/1200x/70/c9/14/70c914af01fd5f7490192f559a508c42.jpg" alt="Macaloves">
+            <h3>Charlotte de Fresas</h3>
+            <p>Suave y frutal</p>
+            <div class="price">S/55.00</div>
+          <button class="comp-boton">Comprar</button>
+        </div>
+        <div class="coleccion-item">
+            <img src="https://i.pinimg.com/736x/f6/b7/70/f6b7700c9ecd547d98470c67f8ed2870.jpg" alt="Pastel de Temporada">
+            <h3>Clásico Fresas & Crema</h3>
+            <p>Dulce y esponjoso</p>
+            <div class="price">S/65.00</div>
+          <button class="comp-boton">Comprar</button>
+        </div>
+        <div class="coleccion-item">
+            <img src="https://i.pinimg.com/736x/d7/d9/e5/d7d9e5701c0f734db4f914e967501f2d.jpg" alt="Pastel de Temporada">
+            <h3>Red Velvet con Fresas</h3>
+            <p>Suave y elegante</p>
+            <div class="price">S/70.00</div>
+          <button class="comp-boton">Comprar</button>
+        </div>
+        <div class="coleccion-item">
+            <img src="https://i.pinimg.com/1200x/95/8c/fc/958cfc0ca8d10651f1c29e76e3c00007.jpg" alt="Pastel de Frambuesa">
+            <h3>Cheesecake de Fresas</h3>
+            <p>Cremoso y fresco</p>
+            <div class="price">S/60.00</div>
+          <button class="comp-boton">Comprar</button>
+        </div>
+    </div>
+</section>
+
+<section class="colecciones">
+    <h2 style="color: #7a1a0a;">Galletas</h2>
+    <div class="colecciones-grid">
+        <div class="coleccion-item">
+            <img src="https://i.pinimg.com/1200x/3d/1e/ca/3d1eca4db29ad0f033fbb03c2165132e.jpg" alt="Galletas de Frambuesa">
+            <h3>Fresas Glaseadas</h3>
+            <p>Suaves y crocantes</p>
+            <div class="price">S/12.00</div>
+          <button class="comp-boton">Comprar</button>
+        </div>
+        <div class="coleccion-item">
+            <img src="https://i.pinimg.com/1200x/59/dd/24/59dd2470430abe11a0482fa3e3c5a8b0.jpg" alt="Galletas de Temporada">
+            <h3>Bocados de Fresa</h3>
+            <p>Suaves y frutales</p>
+            <div class="price">S/14.00</div>
+          <button class="comp-boton">Comprar</button>
+        </div>
+        <div class="coleccion-item">
+            <img src="https://i.pinimg.com/1200x/20/d8/91/20d891848730b1987fa18b975ea5ec6e.jpg" alt="Galletas Variadas">
+            <h3>Corazones Velvet</h3>
+            <p>Rojas y cremosas</p>
+            <div class="price">S/16.00</div>
+          <button class="comp-boton">Comprar</button>
+        </div>
+        <div class="coleccion-item">
+            <img src="https://i.pinimg.com/736x/84/6c/a0/846ca0a6ec8219f74f924f8b79c3e9bf.jpg" alt="Galletas de Chocolate">
+            <h3>Estrellitas de Mermelada</h3>
+            <p>Dulces y rellenas</p>
+            <div class="price">S/13.00</div>
+          <button class="comp-boton">Comprar</button>
+        </div>
+    </div>
+</section>
+
+<section class="colecciones">
+    <h2 style="color: #7a1a0a;">Donas</h2>
+    <div class="colecciones-grid">
+        <div class="coleccion-item">
+            <img src="https://i.pinimg.com/1200x/af/19/32/af1932708236ef09f80708a822da78d7.jpg" alt="Dona Glaseada">
+            <h3>Dona Glaseada</h3>
+            <p>Dulce y esponjosa</p>
+            <div class="price">$10.00</div>
+          <button class="comp-boton">Comprar</button>
+        </div>
+        <div class="coleccion-item">
+            <img src="https://i.pinimg.com/736x/fb/7e/ec/fb7eecc7780f7695518d74cfb9b8489d.jpg" alt="Dona de Temporada">
+            <h3>Dona Primavera</h3>
+            <p>Glaseado rosado con fresas</p>
+            <div class="price">$11.50</div>
+          <button class="comp-boton">Comprar</button>
+        </div>
+        <div class="coleccion-item">
+            <img src="https://i.pinimg.com/736x/5c/c4/60/5cc460bbac19a9db23183c8df11362dd.jpg" alt="Dona Rellena">
+            <h3>Corazón de Vainilla</h3>
+            <p>Suave y con delicioso relleno</p>
+            <div class="price">$12.00</div>
+          <button class="comp-boton">Comprar</button>
+        </div>
+        <div class="coleccion-item">
+            <img src="https://i.pinimg.com/736x/f2/8b/75/f28b7536a7b468d792d739548d120621.jpg" alt="Dona de Frambuesa">
+            <h3>Nube de Fresas</h3>
+            <p>Con crema y fresas frescas</p>
+            <div class="price">$11.00</div>
+          <button class="comp-boton">Comprar</button>
+        </div>
+    </div>
+</section>
+
+
+<section class="colecciones">
+    <h2 style="color: #7a1a0a;">Cupcakes</h2>
+    <div class="colecciones-grid">
+        <div class="coleccion-item">
+            <img src="https://i.pinimg.com/736x/e4/73/04/e47304511a9bad8a1b667b3022ad3f86.jpg" alt="Dona Glaseada">
+            <h3>Velvet Pasión</h3>
+            <p>Bizcocho rojo y cremoso</p>
+            <div class="price">S/6.50</div>
+          <button class="comp-boton">Comprar</button>
+        </div>
+        <div class="coleccion-item">
+            <img src="https://i.pinimg.com/736x/3a/33/b4/3a33b48d4d9400b8a8735a8a46b8a5d6.jpg" alt="Dona de Temporada">
+            <h3>Magia del Bosque</h3>
+            <p>Inspirada en la estación</p>
+            <div class="price">S/7.00</div>
+          <button class="comp-boton">Comprar</button>
+        </div>
+        <div class="coleccion-item">
+            <img src="https://i.pinimg.com/736x/0c/4e/30/0c4e301ebb111d34551e62bc6d8707c4.jpg" alt="Dona Rellena">
+            <h3>Latido Dulce</h3>
+            <p>Chocolate con crema suave</p>
+            <div class="price">S/7.50</div>
+          <button class="comp-boton">Comprar</button>
+        </div>
+        <div class="coleccion-item">
+            <img src="https://i.pinimg.com/1200x/3d/e9/7f/3de97fb9492b9896a37f9251f725997b.jpg" alt="Dona de Frambuesa">
+            <h3>Fresa Delicia</h3>
+            <p>Vainilla con crema y fresa</p>
+            <div class="price">S/6.00</div>
+          <button class="comp-boton">Comprar</button>
+        </div>
+    </div>
+</section>
+
+
+<footer class="simple-footer">
+  <div class="footer-content">
+    <div class="footer-logo-section">
+      <p class="footer-copy">© 2025 BOM BOCADO - Repostería Fina. Todos los derechos reservados.</p>
+    </div>
+
+    <div class="footer-redes">
+      <p>Síguenos en:</p>
+      <div class="redes-iconos">
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="fab fa-instagram" style="color:#E4405F; font-size:20px; margin-right:6px;"></i> Instagram
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook" style="color:#1877F2; font-size:20px; margin-right:6px;"></i> Facebook
+        </a>
+        <a href="https://www.tiktok.com" target="_blank">
+          <i class="fab fa-tiktok" style="color:#000000; font-size:20px; margin-right:6px;"></i> TikTok
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>
