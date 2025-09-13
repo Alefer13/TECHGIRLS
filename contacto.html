@@ -481,6 +481,37 @@
         </form>
       </div>
 
+      <div id="mensaje-alerta" style="display: none;"></div>
+      <script>
+  const form = document.querySelector("form");
+  const mensajeAlerta = document.getElementById("mensaje-alerta");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const correo = document.getElementById("correo").value.trim();
+    const mensaje = document.getElementById("mensaje").value.trim();
+
+    if (!nombre || !correo || !mensaje) {
+      mensajeAlerta.textContent = "🍓 Por favor, completa todos los campos";
+      mensajeAlerta.style.display = "block";
+      mensajeAlerta.style.backgroundColor = "#ffe5de";
+      mensajeAlerta.style.color = "#9c0207";
+    } else {
+      mensajeAlerta.textContent = "🍓 Mensaje enviado con éxito!";
+      mensajeAlerta.style.display = "block";
+      mensajeAlerta.style.backgroundColor = "#d4f8e8";
+      mensajeAlerta.style.color = "#2e7d32";
+      form.reset();
+    }
+
+    setTimeout(() => {
+      mensajeAlerta.style.display = "none";
+    }, 3000);
+  });
+</script>
+
       <!-- DERECHA: Información -->
       <div class="right-column">
         <div aria-label="Información de contacto y redes sociales">
@@ -518,12 +549,12 @@
             <div class="icon-wrapper"><i class="fas fa-clock"></i></div>
             <div>
               <strong>Horario:</strong>
-              <p>Lun a Vie: 8AM - 8PM | Sáb: 9AM - 7PM | Dom: 9AM - 6PM</p>
+              <p>Lun a Vie: 8AM - 8PM |Sáb: 9AM - 7PM | Dom: 9AM - 6PM</p>
             </div>
           </div>
 
           <div class="contact-item" style="flex-direction: column; gap: 8px;">
-            <div class="social-label">No te olvides del delivery gratis por compras mayores a s/. 45.00 <span
+            <div class="social-label">Delivery gratis por compras mayores a s/. 45.00 <span
                 style="margin-left:6px; font-size:0.9rem;"></span></div>
             <p class="follow-phrase" id="followPhrase">
               No te pierdas nuestras <span class="highlight">novedades</span>, <span
@@ -564,7 +595,7 @@
 <footer class="simple-footer">
   <div class="footer-content">
     <div class="footer-logo-section">
-      <p class="footer-copy">© 2025 BOM BOCADO - Repostería Fina. Todos los derechos reservados.</p>
+      <p class="footer-copy">© 2025 BOM BOCADO - Repostería Fina. Todos los derechos reservados. 2025.</p>
     </div>
 
     <div class="footer-redes">
