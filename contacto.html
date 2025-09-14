@@ -419,32 +419,112 @@ nav a:hover {
     box-shadow: 0 16px 48px -8px rgba(160, 79, 102, 0.1);
     margin: 40px auto 0;
   }
+  /*estilos para footer */
+
+  .footer {
+  background-color: #9c2007;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  padding: 40px 20px 0 20px;
+  position: relative;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.footer-column {
+  flex: 1 1 200px;
+}
+.footer-column h3 {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+}
 
   .simple-footer {
-    background-color: #9c2007;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    padding: 40px 20px;
-    text-align: center;
-  }
+  position: relative;
+  background-color: #9c2007; /* rojo principal */
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  padding: 40px 20px;
+  text-align: center;
+}
 
   .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-  }
-
-  .footer-copy {
-    font-size: 0.9em;
-    margin-top: 10px;
-  }
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.footer-copy {
+  font-size: 0.9em;
+  margin-top: 10px;
+}
   .footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+footer a {
+  color: #dbbebe;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-links a:hover {
+  color: #ffd3d0;
+}
+.footer-p {
+  color: #ffe5de;
+}
+  .footer-redes {
+  margin-top: 10px; /* menos espacio arriba */
+  text-align: center; /* centramos todo */
+}
+
+.footer-redes p {
+  margin-bottom: 5px; /* menos espacio debajo del texto */
+  font-size: 0.9em;
+}
+
+/* Imagen de libro de reclamos en el footer */
+.footer-reclamos {
+  position: absolute;
+  top: 40px;   /* ajusta para alinear con BOM BOCADO */
+  right: 10%; /* distancia desde el borde derecho */
+}
+
+.footer-reclamos img {
+  width: 300px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer-reclamos img:hover {
+  transform: scale(1.05);
+}
 
   @media (max-width: 1000px) {
     .layout {
@@ -634,24 +714,37 @@ nav a:hover {
 
 <footer class="simple-footer">
   <div class="footer-content">
-    <div class="footer-logo-section">
-      <p class="footer-copy">© 2025 BOM BOCADO - Repostería Fina. Todos los derechos reservados. 2025.</p>
+    
+    <!-- 🔹 Imagen que enlaza a Libro de Reclamaciones -->
+    <div class="footer-reclamos">
+      <a href="libro.html" title="">
+        <img src="https://dolcecapriccio.pe/wp-content/uploads/2024/04/li-4.png" 
+             alt="Libro de Reclamaciones" 
+             style="width:px; height:px;">
+      </a>
     </div>
 
+    <!-- Sección de redes sociales -->
     <div class="footer-redes">
-      <p>Síguenos en:</p>
+      <p><b>Síguenos en:</b></p> <br>
       <div class="redes-iconos">
         <a href="https://www.instagram.com" target="_blank">
-          <i class="fab fa-instagram" style="color:#E4405F; font-size:20px; margin-right:6px;"></i> Instagram
+          <i class="fab fa-instagram" style="color:#E4405F; font-size:25px; margin-right:6px;"></i> 
         </a>
         <a href="https://www.facebook.com" target="_blank">
-          <i class="fab fa-facebook" style="color:#1877F2; font-size:20px; margin-right:6px;"></i> Facebook
+          <i class="fab fa-facebook" style="color:#1877F2; font-size:25px; margin-right:6px;"></i> 
         </a>
         <a href="https://www.tiktok.com" target="_blank">
-          <i class="fab fa-tiktok" style="color:#000000; font-size:20px; margin-right:6px;"></i> TikTok
+          <i class="fab fa-tiktok" style="color:#000000; font-size:25px; margin-right:6px;"></i> 
         </a>
       </div>
     </div>
+
+    <!-- Sección de copyright -->
+    <div class="footer-logo-section">
+      <p class="footer-copy">© 2025 BOM BOCADO - Repostería Fina. Todos los derechos reservados.</p>
+    </div>
+
   </div>
 </footer>
 

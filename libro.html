@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Libro de Reclamaciones de BOM BOCADO</title>
+  <link rel="stylesheet" href="./js/estilos.css">
+  <link rel="stylesheet" href="responsivedesign.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body id="libro-reclamos">
+
+  <!-- 🔹 Barra de navegación -->
+  <header>
+  <nav>
+    <div class="nav-links">
+      <a href="index.html"><i class="fas fa-home"></i> INICIO</a>
+      <a href="nosotros.html"><i class="fas fa-users"></i> NOSOTROS</a>
+      <a href="productos.html"><i class="fas fa-birthday-cake"></i> PRODUCTOS</a>
+      <a href="novedades.html"><i class="fas fa-star"></i> NOVEDADES</a>
+      <a href="contacto.html"><i class="fas fa-envelope"></i> CONTACTO</a>
+    </div>
+
+
+    <div class="nav-icons">
+  <a href="login.html" title="Mi cuenta">
+    <i class="fas fa-user"></i>
+  </a>
+  <a href="carrito.html" title="Carrito" class="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+  </a>
+</div>
+
+
+  </nav>
+</header>
+  <!-- 🔹 Contenido principal centrado -->
+  <main>
+    <div class="card">
+      <h1 id="title">Libro de Reclamaciones</h1>
+      <p class="lead">
+        Queremos mejorar tu experiencia en BOM BOCADO.  
+        Por favor, completa el siguiente formulario.
+      </p>
+
+      <form>
+        <h2 class="subtitle">Datos del consumidor</h2>
+
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Apellido y nombres" required>
+
+        <label for="dni">DNI</label>
+        <input type="text" id="dni" name="dni" placeholder="Documento de identidad" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono">
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com">
+
+        <h2 class="subtitle">Detalle de la queja o reclamo</h2>
+
+        <label for="tipo">Tipo</label>
+        <select id="tipo" name="tipo" required>
+          <option value="">-- Seleccione --</option>
+          <option value="queja">Queja</option>
+          <option value="reclamo">Reclamo</option>
+        </select>
+
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" name="descripcion" placeholder="Describe tu queja o reclamo..." required></textarea>
+
+        <label for="pedido">Pedido relacionado</label>
+        <input type="text" id="pedido" name="pedido" placeholder="Número o detalle del pedido">
+
+        <h2 class="subtitle">Acción solicitada</h2>
+
+        <label for="accion">Indique lo que espera</label>
+        <textarea id="accion" name="accion" placeholder="Describe la acción que esperas..." required></textarea>
+
+        <button type="submit">Enviar reclamo</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="simple-footer">
+  <div class="footer-content">
+    
+    <!-- 🔹 Imagen que enlaza a Libro de Reclamaciones -->
+    <div class="footer-reclamos">
+      <a href="libro.html" title="">
+        <img src="https://dolcecapriccio.pe/wp-content/uploads/2024/04/li-4.png" 
+             alt="Libro de Reclamaciones" 
+             style="width:px; height:px;">
+      </a>
+    </div>
+
+    <!-- Sección de redes sociales -->
+    <div class="footer-redes">
+      <p><b>Síguenos en:</b></p> <br>
+      <div class="redes-iconos">
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="fab fa-instagram" style="color:#E4405F; font-size:25px; margin-right:6px;"></i> 
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook" style="color:#1877F2; font-size:25px; margin-right:6px;"></i> 
+        </a>
+        <a href="https://www.tiktok.com" target="_blank">
+          <i class="fab fa-tiktok" style="color:#000000; font-size:25px; margin-right:6px;"></i> 
+        </a>
+      </div>
+    </div>
+
+    <!-- Sección de copyright -->
+    <div class="footer-logo-section">
+      <p class="footer-copy">© 2025 BOM BOCADO - Repostería Fina. Todos los derechos reservados.</p>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
