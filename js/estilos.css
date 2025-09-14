@@ -48,12 +48,16 @@ nav a:hover {
   background-color: var(--color-texto);
   color: white;
 }
+
+/* estilos de nosotros*/
 .main-nosotros {
   background-color: var(--color-secundario);
 }
 .nosotros{
-  background-color: #694922;
+  background-color:#85442d ;
+  
 }
+
 .contenido {
   display: flex;
   justify-content: center;
@@ -61,43 +65,148 @@ nav a:hover {
   gap: 40px;
   padding: 60px 40px;
   flex-wrap: wrap;
+
 }
 .contenido.invitacion {
-  padding: 40px 20px;   
-  background-color: var(--color-claro); 
-  border-radius: 15px;  
+ background: linear-gradient(145deg, #ffe5de, #ffd0c2); /* degradado suave */
+  border: 2px solid #ff8c61;
+  border-radius: 25px;
+  padding: 50px 30px;
+  max-width: 800px;
+  margin: 50px auto; /* centrado y con espacio hacia arriba */
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  animation: fadeInUp 1s ease forwards;
 }
+.contenido.invitacion .titulo-seccion {
+  font-size: 32px;
+  font-weight: 800;
+  color: #9c2007;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  border-bottom: 3px solid #ff8c61;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+.contenido.invitacion p {
+  font-size: 20px;
+  color: #7a1a0a;
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
 .imagen-nosotros img {
-  width: 600px;
-  max-width: 100%;
-  border-radius: 20px;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+}
+.imagen-nosotros img:hover {
+ transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.35);
+  filter: brightness(1.05);
+}
+/* Texto debajo de la foto del equipo */
+.contenido.equipo .parrafo {
+  font-size: 24px;
+  line-height: 1.9;
+  color: #ffe5de;
+  text-align: center;
+  max-width: 700px;
+  margin: 20px auto 0 auto;
+  font-weight: 600;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.contenido.equipo .parrafo:hover {
+  transform: translateY(-2px); /* efecto ligero al pasar el cursor */
 }
 .textito {
   max-width: 500px;
+  
 }
-.textito p {
-  font-size: 16px;
-  margin-bottom: 30px;
-  line-height: 1.6;
-  color: var(--color-secundario);
+.cuadro-conocenos {
+  background: linear-gradient(145deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05));
+  border: 2px solid #ff8c61;
+  border-radius: 25px;
+  padding: 35px 30px;
+  max-width: 700px;
+  margin: 25px auto;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.cuadro-conocenos:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+.cuadro-conocenos p {
+  font-size: 18px;
+  color: #ffe5de;
+  line-height: 1.7;
+  text-align: justify;
+}
+.contenido-conocenos{
+  background: linear-gradient(145deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05));
+  border: 2px solid #ff8c61;
+  border-radius: 25px;
+  padding: 35px 30px;
+  max-width: 700px;
+  margin: 30px auto;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.cuadro-conocenos .titulo-principal {
+  font-size: 32px;
+  color: #85442d;
+  font-weight: 800;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #ff8c61;
+  display: inline-block;
+}
+.contenido.equipo .lol-meow {
+  font-size: 36px;                /* más grande */
+  font-weight: 800;               /* más grueso */
+  color: #fff3f0;                 /* contraste sobre el fondo */
+  text-align: center;             /* centrado sobre la foto */
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5); /* sombra cálida y profunda */
+  margin-bottom: 20px;            /* separa del resto del contenido */
+  letter-spacing: 2px;            /* espacio entre letras */
+  display: inline-block;
+  border-bottom: 4px solid #ff8c61; /* línea decorativa */
+  padding-bottom: 8px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contenido.equipo .lol-meow:hover {
+  transform: scale(1.05);         /* ligero aumento al pasar el cursor */
+  color: #ffe5de;                 /* cambio de color sutil */
+}
+
+/* animación dinámica */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 
 .btn-pedido {
-  background-color: var(--color-acento);
+ background: linear-gradient(135deg, #ff8c61, #e46945);
   color: white;
-  padding: 12px 30px;
+  padding: 14px 35px;
   border: none;
   border-radius: 30px;
-  text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
-  transition: background 0.3s, transform 0.2s;
-  display: inline-block;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
 }
 .btn-pedido:hover {
-  background-color: #d88b77;
-  transform: scale(1.05);
+  background: linear-gradient(135deg, #e46945, #c63f2a);
+  transform: translateY(-3px) scale(1.05);
 }
 .colecciones {
   background-color: var(--color-claro);
@@ -299,7 +408,7 @@ footer a {
   background-color: var(--color-claro);
 }
 .skibidis {
-  color: #7a1a0a;
+  color: #a35031;
   font-size: 42px;
   text-align: center;
   margin-bottom: 25px;
