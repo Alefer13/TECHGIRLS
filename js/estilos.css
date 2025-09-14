@@ -425,6 +425,8 @@ nav {
     font-weight: bold;
     margin-top: 10px;
 }
+
+/*estilos del libro de reclamos */
 {
   background: #fdf6f0; /* pastel crema */
   margin: 0;
@@ -442,11 +444,14 @@ nav {
   box-shadow: 0 6px 20px rgba(22,27,80,0.08);
   padding: 24px;
 }
-
-h1 {
+#title {
   margin: 0 0 10px;
   font-size: 24px;
   color: #6c5b7b; /* pastel púrpura */
+}
+
+#subtitle{
+  color:#6c5b7b; ;
 }
 
 p.lead {
