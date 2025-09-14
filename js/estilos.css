@@ -677,7 +677,7 @@ nav {
 /* Imagen de libro de reclamos en el footer */
 .footer-reclamos {
   position: absolute;
-  top: 40px;   /* ajusta para alinear con BOM BOCADO */
+  bottom: 20px;   /* ajusta para alinear con BOM BOCADO */
   right: 10%; /* distancia desde el borde derecho */
 }
 
@@ -692,6 +692,85 @@ nav {
   transform: scale(1.05);
 }
 
+/* medios de pago en el footer*/
+.medios-pago {
+ position: absolute;
+  top: 45px;   /* ajusta para alinear con BOM BOCADO */
+  right: 12%; /* distancia desde el borde derecho */
+}
+.medios-pago img{
+  border-radius: 10px;
+  display: inline-block;
+  margin: 0 5px; /* separa horizontalmente */
+  vertical-align: middle; 
+}
 
+.Links h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #ff8c61; /* línea decorativa */
+  display: inline-block;
+  padding-bottom: 4px;
+}
+.Links ul {
+  text-align: left;
+  list-style-type: "🍰 ";  
+  padding: 0;
+  margin: 0;
+}
+
+.Links ul li {
+  margin: 8px 0;
+}
+
+.Links  ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.Links ul li a:hover {
+  color: #ff8c61;
+  padding-left: 6px; /* se mueve un poquito al pasar el mouse */
+}
+
+.contactlinks{
+  position: absolute;
+  top: 45px;   /* ajusta para alinear con BOM BOCADO */
+  left: 12%; /* distancia desde el borde derecho */
+}
+.contactlinks h3{
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #ff8c61; /* línea decorativa */
+  display: inline-block;
+  padding-bottom: 4px;
+}
+.contactlinks ul {
+  text-align: left;
+  list-style-type: "➤   ";  
+  padding: 0;
+  margin: 0;
+}
+.contactlinks ul li {
+  margin: 8px 0;
+}
+.contactlinks ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+.contactlinks ul li a:hover {
+  color: #ff8c61;
+  padding-left: 6px; /* se mueve un poquito al pasar el mouse */
+}
 
 

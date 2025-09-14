@@ -429,7 +429,7 @@ nav a:hover {
   position: relative;
 }
 .footer-container {
-  display: flex;
+   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
@@ -465,7 +465,6 @@ nav a:hover {
   padding: 40px 20px;
   text-align: center;
 }
-
   .footer-content {
   display: flex;
   flex-direction: column;
@@ -487,13 +486,8 @@ footer a {
   font-weight: 500;
   transition: color 0.3s ease;
 }
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
 .footer-links a:hover {
-  color: #ffd3d0;
+   color: #ffd3d0;
 }
 .footer-p {
   color: #ffe5de;
@@ -531,6 +525,107 @@ footer a {
       flex-direction: column;
     }
   }
+
+  /* Imagen de libro de reclamos en el footer */
+.footer-reclamos {
+  position: absolute;
+  top: 180px;   /* ajusta para alinear con BOM BOCADO */
+  right: 10%; /* distancia desde el borde derecho */
+}
+
+.footer-reclamos img {
+  width: 300px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer-reclamos img:hover {
+  transform: scale(1.05);
+}
+
+/* medios de pago en el footer*/
+.medios-pago {
+ position: absolute;
+  bottom: 180px;   /* ajusta para alinear con BOM BOCADO */
+  right: 12%; /* distancia desde el borde derecho */
+}
+.medios-pago img{
+  border-radius: 10px;
+  display: inline-block;
+  margin: 0 5px; /* separa horizontalmente */
+  vertical-align: middle; 
+}
+
+.Links h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #ff8c61; /* línea decorativa */
+  display: inline-block;
+  padding-bottom: 4px;
+}
+.Links ul {
+  text-align: left;
+  list-style-type: "🍰 ";  
+  padding: 0;
+  margin: 0;
+}
+
+.Links ul li {
+  margin: 8px 0;
+}
+
+.Links  ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.Links ul li a:hover {
+  color: #ff8c61;
+  padding-left: 6px; /* se mueve un poquito al pasar el mouse */
+}
+
+.contactlinks{
+  position: absolute;
+  top: 45px;   /* ajusta para alinear con BOM BOCADO */
+  left: 12%; /* distancia desde el borde derecho */
+}
+.contactlinks h3{
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #ff8c61; /* línea decorativa */
+  display: inline-block;
+  padding-bottom: 4px;
+}
+.contactlinks ul {
+  text-align: left;
+  list-style-type: "➤   ";  
+  padding: 0;
+  margin: 0;
+}
+.contactlinks ul li {
+  margin: 8px 0;
+}
+.contactlinks ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+.contactlinks ul li a:hover {
+  color: #ff8c61;
+  padding-left: 6px; /* se mueve un poquito al pasar el mouse */
+}
+
+
   </style>
 </head>
 
@@ -714,6 +809,26 @@ footer a {
 
 <footer class="simple-footer">
   <div class="footer-content">
+
+    <!-- 🔹 Columna izquierda (enlaces de contacto) -->
+    <div class="contactlinks">
+      <h3 style="color: white;">Contacto</h3>
+      <ul>
+        <li><a href="https://www.google.com/maps/place/Av.+Primavera+123,+Miraflores,+Lima,+Perú" target="_blank">📍 Av. Primavera 123, Miraflores, Lima, Perú</a></li>
+        <li><a href="mailto:pedidos@bombocado.com">📧 pedidos@bombocado.com</a></li>
+        <li><a href="tel:+51987654321">📞 +51 987 654 321</a></li>
+      </ul>
+      
+    </div>
+
+    
+    <div class="medios-pago">
+      <p><b>Medios de pago</b></p> 
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Icono_de_la_aplicaci%C3%B3n_Yape.png" alt="" width="50px">
+      <img src="https://www.mercadonegro.pe/wp-content/uploads/2020/09/imagen-bcp.jpg" alt="" width="55px" , height="50px">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="" width="50px">
+      <img src="https://brandemia.org/contenido/subidas/2019/04/logo-bbva-960x640.jpg" alt="" width="55px" height="50px"> <br> <br>
+    </div>
     
     <!-- 🔹 Imagen que enlaza a Libro de Reclamaciones -->
     <div class="footer-reclamos">
@@ -721,12 +836,18 @@ footer a {
         <img src="https://dolcecapriccio.pe/wp-content/uploads/2024/04/li-4.png" 
              alt="Libro de Reclamaciones" 
              style="width:px; height:px;">
-      </a>
+      </a><br>
+      <p>Central Telefónica: (01) 416 6400</p>
     </div>
 
-    <!-- Sección de redes sociales -->
+    <div class="Links">
+      <h3 style="color: white;"><b>Links</b></h3>
+      <ul>
+         <li><a href="nosotros.html">Sobre nosotras</a></li>
+         <li><a href="contacto.html">Contáctanos</a></li>
+     </ul> <br>
+     <!-- Sección de redes sociales -->
     <div class="footer-redes">
-      <p><b>Síguenos en:</b></p> <br>
       <div class="redes-iconos">
         <a href="https://www.instagram.com" target="_blank">
           <i class="fab fa-instagram" style="color:#E4405F; font-size:25px; margin-right:6px;"></i> 
@@ -740,6 +861,8 @@ footer a {
       </div>
     </div>
 
+    </div>
+
     <!-- Sección de copyright -->
     <div class="footer-logo-section">
       <p class="footer-copy">© 2025 BOM BOCADO - Repostería Fina. Todos los derechos reservados.</p>
@@ -747,7 +870,6 @@ footer a {
 
   </div>
 </footer>
-
 
 </body>
 
