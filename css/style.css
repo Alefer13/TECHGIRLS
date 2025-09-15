@@ -774,3 +774,259 @@ nav {
 }
 
 
+/* MODAL USUARIO  */
+/* fondo modal*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  background-color: rgba(0,0,0,0.4); /* un poco transparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Borroso detrás del modal */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(5px); /* para compatibilidad Safari */
+}
+.modal {
+  transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+}
+
+/* Caja blanca centrada */
+.modal-contenido {
+  background: #fff0f2; /* fondo suave rosado */
+  padding: 40px 30px; /* más espacio interno */
+  border-radius: 12px;
+  width: 500px; /* más ancho */
+  height: auto;
+  max-width: 95%;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35); /* sombra más profunda */
+  position: relative;
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* Botón cerrar (X) */
+.cerrar {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #555;
+}
+
+/* Logo */
+.modal-logo {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.modal-logo h1 {
+  color: #d8436e; /* rosa fuerte moderno */
+  font-size: 32px;
+  margin: 0;
+  border-bottom:  rgba(226, 150, 170, 0.3) 1px  solid;
+  
+}
+.modal-logo .modal-subtitulo {
+  font-size: 15px;
+  color: #555;
+  margin-top: -2px;
+  border-bottom: #333 2px solid;
+  box-shadow: 0 0 5px rgba(216,67,110,0.3);
+}
+
+/* Título */
+.modal-contenido h2 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 700;
+  color: #333;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*label*/
+.modal-contenido .campo-usuario label,
+.modal-contenido .campo-password label {
+  width: 90%;
+  margin: 0 auto 6px;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+/*inputs y boton */
+.modal-contenido input[type="text"],
+.modal-contenido input[type="password"],
+.modal-contenido input[type="email"],
+.modal-contenido .btn-login {
+  width: 90%;
+  margin: 0 auto 18px; /* 🔹 centrados + espacio abajo */
+  display: block;      /* necesario para que margin auto funcione */
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  margin-bottom: 18px;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+/*Focus*/
+.modal-contenido input[type="text"]:focus,
+.modal-contenido input[type="password"]:focus, 
+.modal-contenido input[type="email"]:focus {
+  border-color: #d8436e;
+  box-shadow: 0 0 5px rgba(216,67,110,0.3);
+  outline: none;
+}
+.rojo {
+  color: red;
+}
+
+/* Campo password con link */
+.campo-password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Link derecha */
+.link-derecha {
+  font-size: 13px;
+  color: #d8436e;
+  text-decoration: none;
+}
+.link-derecha:hover {
+  text-decoration: underline;
+}
+
+/* Contenedor del label y checkbox */
+.fila-labels {
+  display: flex;
+
+  width: 90%;
+
+}
+/* Estilo label normal */
+.fila-labels label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+
+/* Botón login */
+.btn-login {
+  width: 100%;
+  background: #d8436e; /* rosa fuerte */
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+}
+.btn-login:hover {
+  background: #b33a60;
+}
+
+/* Texto crear cuenta */
+.crear-cuenta {
+  margin-top: 20px;
+  font-size: 15px;
+  text-align: center;
+  color: #554744;
+}
+.crear-cuenta a {
+  color: #d8436e;
+  font-weight: bold;
+  text-decoration: none;
+}
+.crear-cuenta a:hover {
+  text-decoration: underline;
+}
+
+/* inputs llenos*/
+/* Error rosa */
+input.error {
+  border: 2px solid #d8436e;
+  background-color: #ffe6ef;
+  animation: shake 0.3s;
+}
+
+/* Animación de temblor */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
+/* estilos de las alerts*/
+/* Fondo oscuro semi-transparente */
+.custom-alert {
+  display: none; /* Oculta por defecto */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Caja de alerta */
+.custom-alert-content {
+  background: #fff0f6; /* Fondo rosita pastel */
+  padding: 20px 30px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 320px;
+  box-shadow: 0 4px 15px rgba(255, 140, 97, 0.3);
+  border: 2px solid #ff8cba; /* borde rosado */
+  animation: fadeIn 0.3s ease;
+}
+
+/* Texto */
+.custom-alert-content p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #a83c6c; /* rosado más fuerte */
+  font-weight: 500;
+}
+
+/* Botón */
+.custom-alert-content button {
+  padding: 8px 18px;
+  background: #ff8cba; /* botón rosado fuerte */
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.custom-alert-content button:hover {
+  background: #e4699c; /* hover más oscuro */
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+
+
+
