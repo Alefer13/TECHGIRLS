@@ -12,14 +12,14 @@ El proyecto fue desarrollado como parte del curso de desarrollo web, aplicando *
 
 📂 Estructura del proyecto
 TECHGIRLS/
-│── index.html
-│── nosotros.html
-│── productos.html
-│── novedades.html
-│── contacto.html
-│── responsivedesign.css
-│── js/ # Archivos JavaScript
-│── .vscode/ # Configuración del editor
+-📂 index.html
+-📂 nosotros.html
+-📂productos.html
+-📂novedades.html
+-📂contacto.html
+-📂responsivedesign.css
+-📂js/ # Archivos JavaScript
+-📂.vscode/ # Configuración del editor
 
 🚀 Cómo usar el proyecto
 1. Clonar el repositorio:
