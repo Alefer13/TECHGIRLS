@@ -664,39 +664,41 @@ footer a {
     </div>
 
     <div class="layout">
-      <!-- IZQUIERDA: Formulario -->
-      <div class="left-column">
-        <form aria-label="Formulario de contacto" action="#" novalidate>
-          <h2>Escríbenos</h2>
-          <div class="form-field">
+<!-- IZQUIERDA: Formulario -->
+<div class="left-column">
+  <form aria-label="Formulario de contacto" action="#" novalidate>
+    <h2>Escríbenos</h2>
 
-            <label for="nombre" style="display:none;">Nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
-          </div>
+    <div class="form-field">
+      <label for="nombre" style="display:none;">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+    </div>
 
-          <div class="form-field">
-            <label for="telefono" style="display:none;">Teléfono</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" />
-          </div>
+    <div class="form-field">
+      <label for="telefono" style="display:none;">Teléfono</label>
+      <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" />
+    </div>
 
-          <div class="form-field">
-            <label for="correo" style="display:none;">Correo electrónico</label>
-            <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required />
-          </div>
+    <div class="form-field">
+      <label for="correo" style="display:none;">Correo electrónico</label>
+      <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required />
+    </div>
 
-          <div class="form-field">
-            <label for="mensaje" style="display:none;">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribenos un mensaje..." required></textarea>
-          </div>
+    <div class="form-field">
+      <label for="mensaje" style="display:none;">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escríbenos un mensaje..." required></textarea>
+    </div>
 
-          <div>
-            <button type="submit">Enviar mensaje</button>
-          </div>
-        </form>
-      </div>
+    <div>
+      <button type="submit">Enviar mensaje</button>
+    </div>
+  </form>
 
-      <div id="mensaje-alerta" style="display: none;"></div>
-      <script>
+  <!-- Aquí va el mensaje dinámico -->
+  <div id="mensaje-alerta" style="display: none;"></div>
+</div>
+
+<script>
   const form = document.querySelector("form");
   const mensajeAlerta = document.getElementById("mensaje-alerta");
 
@@ -725,6 +727,9 @@ footer a {
     }, 3000);
   });
 </script>
+
+
+
 
       <!-- DERECHA: Información -->
       <div class="right-column">

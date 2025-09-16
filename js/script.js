@@ -157,13 +157,3 @@ function customAlert(mensaje) {
     alertBox.style.display = "none";
   };
 }
-
-
-
-
-
-
-
-
-
-
