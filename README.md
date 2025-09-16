@@ -12,14 +12,14 @@ Aquí encontrarás pasteles, galletas, donas y cupcakes hechos con amor, estilo 
 
 🗂️ Estructura del proyecto
 TECHGIRLS/
-│- index.html 🍓 Página principal
-│- nosotros.html 💕 Sobre nosotros
-│- productos.html 🎂 Catálogo de productos
-│- novedades.html ✨ Sección de novedades
-│- contacto.html 📬 Formulario de contacto
-│- responsivedesign.css 🎨 Estilos y responsive design
-│- js/ ⚡ Archivos JavaScript
-│- .vscode/ ⚙️ Configuración del editor
+- index.html 🍓 Página principal
+- nosotros.html 💕 Sobre nosotros
+- productos.html 🎂 Catálogo de productos
+- novedades.html ✨ Sección de novedades
+- contacto.html 📬 Formulario de contacto
+- responsivedesign.css 🎨 Estilos y responsive design
+- js/ ⚡ Archivos JavaScript
+- .vscode/ ⚙️ Configuración del editor
 
 🚀 Cómo ver el proyecto
 1. Clona este repositorio:  
